@@ -2,7 +2,6 @@
 <html lang="en"><head>
 
   <meta charset="utf-8">
-  <meta rel="shortcut icon" href="https://2tihub.xyz/poradnik-WS2016/WS-logo.png" sizes="144x144" type="image/png">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -20,9 +19,6 @@
 
   <!-- Custom styles for this template -->
   <link href="https://2tihub.xyz/css/2tihub.min.css" rel="stylesheet">
-  <link href="https://2tihub.xyz/css/darkmode.css" rel="stylesheet">
-
-  <link href="https://2tihub.xyz/poradnik-WS2016/files/style.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
 
   <link href="https://2tihub.xyz/css/style-extra.css" rel="stylesheet">
@@ -31,15 +27,33 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="navigation-wrap bg-light start-header start-style">
     <div class="container">
-      <a class="navbar-brand animate__animated animate__fadeInDownBig" href="#ufw">UFW</a>
-      <a class="navbar-brand animate__animated animate__fadeInDownBig" href="#gufw">GUFW</a>
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-md navbar-light" style="font-family:'Maven Pro'">
+            <a class="navbar-brand" style="font-weight:bold">2TI Hub</a>	
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
+              <ul class="navbar-nav ml-auto py-4 py-md-0">
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                  <a class="nav-link" href="#ufw">UFW</a>
+                </li>
+                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                  <a class="nav-link" href="#gufw">GUFW</a>
+                </li>
+              </ul>
+            </div>
+          </nav>		
+        </div>
+      </div>
     </div>
-  </nav>
+  </div>
 
   <!-- Page Header -->
-  <header class="masthead animate__animated animate__fadeIn" style="background-image: url('https://2tihub.xyz/linux/ufw-gufw/linux.jpg')">
+  <header class="masthead animate__animated animate__fadeIn" style="background-image: url('https://app.2tihub.xyz/linux/linux.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
@@ -66,57 +80,57 @@
           <h3 class="section-heading" id="ufw-instalacja" style="padding-top:40px;padding-bottom:40px;text-align:center;margin-top:8px">Instalacja</h3>
           <hr>
           <p>Aby zainstalować UFW, w konsoli należy wywołać polecenie <kbd>sudo apt-get install ufw</kbd></p>
-          <div class="banner">
-            <img src="files/ufw/1.png" width="256" height="192" alt=""/>
+          <div class="banner" width="100%">
+            <img src="files/ufw/1.png" width="100%" height="100%" alt=""/>
           </div>
           <hr>
           <p>Po instalacji jeszcze włączymy automatyczny start usługi wraz z systemem za pomocą polecenia <kbd>sudo nano /etc/ufw/ufw.conf</kbd>, należy tu zmienić <span class="border border-dark" style="padding-left:8px;padding-right:8px">ENABLED=no</span> na <span class="border border-dark" style="padding-left:8px;padding-right:8px">ENABLED=yes</span></p>
-          <div class="banner">
-            <img src="files/ufw/2-1.png" width="256" height="192" alt=""/>
+          <div class="banner" width="100%">
+            <img src="files/ufw/2-1.png" width="100%" height="100%" alt=""/>
           </div>
-          <div class="banner">
-            <img src="files/ufw/2-2.png" width="256" height="192" alt=""/>
+          <div class="banner" width="100%">
+            <img src="files/ufw/2-2.png" width="100%" height="100%" alt=""/>
           </div>
           <p>Można się jeszcze upewnić, czy mamy aktywną obsługę IPv6, dopisując <span class="border border-dark" style="padding-left:8px;padding-right:8px">IPV6=yes</span></p>
-          <div class="banner">
-            <img src="files/ufw/2-3.png" width="256" height="192" alt=""/>
+          <div class="banner" width="100%">
+            <img src="files/ufw/2-3.png" width="100%" height="100%" alt=""/>
           </div>
           <hr>
           <p>Stan UFW można sprawdzić poleceniem <kbd>sudo ufw status verbose</kbd>, na tym etapie UFW powinno być nieaktywne, lecz gdyby jakimś cudem byłboy aktywne, należy tymczasowo wyłączyć UFW oraz zrestartować do wartości domyślnych poleceniami <kbd>sudo ufw disable</kbd> oraz <kbd>sudo ufw reset</kbd></p>
-          <div class="banner">
-            <img src="files/ufw/4-status.png" width="256" height="192" alt=""/>
+          <div class="banner" width="100%">
+            <img src="files/ufw/4-status.png" width="100%" height="100%" alt=""/>
           </div>
-          <div class="banner">
-            <img src="files/ufw/9-1-disable.png" width="256" height="192" alt=""/>
+          <div class="banner" width="100%">
+            <img src="files/ufw/9-1-disable.png" width="100%" height="100%" alt=""/>
           </div>
           <hr>
           <h3 class="section-heading" id="ufw-konfiguracja" style="padding-top:40px;padding-bottom:40px;margin-top:8px;text-align:center">Konfiguracja</h3>
           <hr>
           <p>Standardowo zaczynam konfigurację reguł UFW od 2 podstawowych reguł: incoming, odpowiadającej za pakiety przychodzące oraz outcoming, odpowiadającej za pakiety wysyłane. Pierwsza z nich blokuje cały ruch przychodzący, druga pozwala na ruch wychodzący, co jest bazą dla pozostałych reguł, w których będziemy zezwalać na połączenia przychodzące dla różnych portów/usług.</p>
-          <div class="banner">
-            <img src="files/ufw/5.png" width="256" height="192" alt=""/>
+          <div class="banner" width="100%">
+            <img src="files/ufw/5.png" width="100%" height="100%" alt=""/>
           </div>
           <hr>
           <p>Teraz dodam kilka reguł zapory sieciowej, aby zezwolić na odbieranie pakietów przez usługi: HTTP [80], HTTPS [443], IMAP [143] oraz odbieranie pakietów z adresu 10.90.90.90</p>
-          <div class="banner">
-            <img src="files/ufw-2/1-allow-ports.png" width="256" height="192" alt=""/>
+          <div class="banner" width="100%">
+            <img src="files/ufw-2/1-allow-ports.png" width="100%" height="100%" alt=""/>
           </div>
           <p>Zablokuję również ruch przychodzący z portów od 1024 do 1036</p>
-          <div class="banner">
-            <img src="files/ufw-2/1-2-deny-1024-1036.png" width="256" height="192" alt=""/>
+          <div class="banner" width="100%">
+            <img src="files/ufw-2/1-2-deny-1024-1036.png" width="100%" height="100%" alt=""/>
           </div>
           <hr>
           <p>Usunąć reguły można poleceniem <kbd>sudo ufw delete [numer usługi]</kbd>, usunę więc reguły IPv6. Aby uzyskać numer usługi, należy najpierw włączyć UFW poleceniem <kbd>sudo ufw enable</kbd>, następnie wywołując polecenie <kbd>sudo ufw status numbered</kbd></p>
-          <div class="banner">
-            <img src="files/ufw-2/2-delete.png" width="256" height="192" alt=""/>
+          <div class="banner" width="100%">
+            <img src="files/ufw-2/2-delete.png" width="100%" height="100%" alt=""/>
           </div>
           <p>Zablokuję również ruch przychodzący z portów od 1024 do 1036</p>
-          <div class="banner">
-            <img src="files/ufw-2/2-2-delete.png" width="256" height="192" alt=""/>
+          <div class="banner" width="100%">
+            <img src="files/ufw-2/2-2-delete.png" width="100%" height="100%" alt=""/>
           </div>
           <p>Aby usunąć regułę, która jest odpowiedzialna za zezwolenie na połączenia przychodzące z usługi HTTPS na porcie 443, należy posłużyć się poleceniem <kbd>sudo ufw delete allow 443</kbd></p>
-          <div class="banner">
-            <img src="files/ufw-2/3-delete-allow-443.png" width="256" height="192" alt=""/>
+          <div class="banner" width="100%">
+            <img src="files/ufw-2/3-delete-allow-443.png" width="100%" height="100%" alt=""/>
           </div>
 
           <h2 class="section-heading" id="gufw" style="padding-top:70px;text-align:center">GUFW</h2>
@@ -125,49 +139,49 @@
           <h3 class="section-heading" id="gufw-instalacja" style="padding-top:40px;padding-bottom:40px;text-align:center;margin-top:8px">Instalacja</h3>
           <hr>
           <p>Aby zainstalować GUFW, w konsoli należy wywołać polecenie <kbd>sudo apt-get install gufw</kbd></p>
-          <div class="banner">
-            <img src="files/gufw/1.png" width="256" height="192" alt=""/>
+          <div class="banner" width="100%">
+            <img src="files/gufw/1.png" width="100%" height="100%" alt=""/>
           </div>
           <hr>
           <p>Aby włączyć GUFW wystarczy kliknąć w pasek stanu</p>
-          <div class="banner">
-            <img src="files/gufw/1.png" width="256" height="192" alt=""/>
+          <div class="banner" width="100%">
+            <img src="files/gufw/1.png" width="100%" height="100%" alt=""/>
           </div>
-          <div class="banner">
-            <img src="files/gufw-2/1.png" width="256" height="192" alt=""/>
+          <div class="banner" width="100%">
+            <img src="files/gufw-2/1.png" width="100%" height="100%" alt=""/>
           </div>
           <p>Aby zresetować GUFW, należy kliknąć w <b>Edycja</b> na pasku nawigacji i wybrać z listy <b>Resetuj bieżący profil</b></p>
-          <div class="banner">
-            <img src="files/gufw-2/4-reset.png" width="256" height="192" alt=""/>
+          <div class="banner" width="100%">
+            <img src="files/gufw-2/4-reset.png" width="100%" height="100%" alt=""/>
           </div>
           <hr>
           <h3 class="section-heading" id="gufw-konfiguracja" style="padding-top:40px;padding-bottom:40px;text-align:center;margin-top:8px">Konfiguracja</h3>
           <hr>
           <p>Teraz, tak jak w poprzednim przypadku dodaję kilka reguł zapory sieciowej, lecz tym razer używając łatwego w użyciu interfejsu graficznego</p>
-          <div class="banner">
-            <img src="files/gufw-2/2-allow-http.png" width="256" height="192" alt=""/>
+          <div class="banner" width="100%">
+            <img src="files/gufw-2/2-allow-http.png" width="100%" height="100%" alt=""/>
           </div>
-          <div class="banner">
-            <img src="files/gufw-2/2-allow-https.png" width="256" height="192" alt=""/>
+          <div class="banner" width="100%">
+            <img src="files/gufw-2/2-allow-https.png" width="100%" height="100%" alt=""/>
           </div>
-          <div class="banner">
-            <img src="files/gufw-2/2-2-allow-10-90-90-90.png" width="256" height="192" alt=""/>
+          <div class="banner" width="100%">
+            <img src="files/gufw-2/2-2-allow-10-90-90-90.png" width="100%" height="100%" alt=""/>
           </div>
-          <div class="banner">
-            <img src="files/gufw-2/2-3-allow-imap.png" width="256" height="192" alt=""/>
+          <div class="banner" width="100%">
+            <img src="files/gufw-2/2-3-allow-imap.png" width="100%" height="100%" alt=""/>
           </div>
-          <div class="banner">
-            <img src="files/gufw-2/2-4-reguly.png" width="256" height="192" alt=""/>
+          <div class="banner" width="100%">
+            <img src="files/gufw-2/2-4-reguly.png" width="100%" height="100%" alt=""/>
           </div>
           <hr>
           <p>Tym samym sposobem zablokuję również ruch przychodzący z portów od 1024 do 1036</p>
-          <div class="banner">
-            <img src="files/gufw-2/3-deny-1024-1036.png" width="256" height="192" alt=""/>
+          <div class="banner" width="100%">
+            <img src="files/gufw-2/3-deny-1024-1036.png" width="100%" height="100%" alt=""/>
           </div>
           <hr>
           <p>Reguły można łatwo usuwać klikając na daną regułę i znak minusa</p>
-          <div class="banner">
-            <img src="files/gufw-2/2-4-reguly.png" width="256" height="192" alt=""/>
+          <div class="banner" width="100%">
+            <img src="files/gufw-2/2-4-reguly.png" width="100%" height="100%" alt=""/>
           </div>
 
         </div>
@@ -182,6 +196,5 @@
 
   <!-- Custom scripts for this template -->
   <script src="https://2tihub.xyz/js/2tihub.min.js"></script>
-  <script src="https://2tihub.xyz/js/darkmode.js"></script>
 
 </body></html>

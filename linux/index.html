@@ -20,14 +20,13 @@
 
     <!-- Custom styles for this template -->
     <link href="https://2tihub.xyz/css/2tihub.min.css" rel="stylesheet">
-    <link href="https://2tihub.xyz/css/darkmode.css" rel="stylesheet">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
   </head>
   <body>
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('https://linux.2tihub.xyz/files/linux.jpg')">
+    <header class="masthead" style="background-image: url('https://app.2tihub.xyz/linux/linux.jpg')">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
@@ -41,9 +40,43 @@
       </div>
     </header>
 
-    <!-- Main Content -->
-    <div id="kontener" class="container">
-    </div>
+  <!-- Main Content -->
+  <div id="kontener" class="container">
+    <script>
+      $(document).ready(function () {
+                
+          // FETCHING DATA FROM JSON FILE
+          $.getJSON("https://2tihub.xyz/json/notes.json", 
+          function (data) {
+            var fetchJSON = '';
+                
+            // ITERATING THROUGH OBJECTS
+            $.each(data, function (key, value) {
+                
+              // CONSTRUCTION OF ROWS HAVING
+              // DATA FROM JSON OBJECT
+              fetchJSON += '<div class="row">';
+              fetchJSON += '<div class="col-lg-8 col-md-10 mx-auto">';
+              fetchJSON += '<div class="post-preview">';
+              fetchJSON += '<a href="https://app.2tihub.xyz/linux/' + value.referral + '">';
+                
+              fetchJSON += '<h2 class="post-title"><i class="' + value.icon + '"></i> ' + value.subject + '</h2>';
+              fetchJSON += '<h3 class="post-subtitle">' + value.description + '</h3>';
+                
+              fetchJSON += '</a>';
+              fetchJSON += '<p class="post-meta">' + value.date + '</p>';
+              fetchJSON += '</div>';
+              fetchJSON += '</div>';
+              fetchJSON += '</div>';
+              fetchJSON += '<hr>';
+            });
+                                          
+            // INSERTING ROWS INTO CONTAINER 
+            $('#kontener').append(fetchJSON);
+          });
+      });
+    </script>
+  </div>
 
     <!-- Bootstrap core JavaScript -->
     <!--<script src="https://2tihub.xyz/vendor/jquery/jquery.min.js"></script>-->
@@ -53,9 +86,6 @@
     <!-- Custom scripts for this template -->
     <!--<script src="https://2tihub.xyz/js/2tihub.min.js"></script>-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script src="files/fetch.js"></script>
-
-    <script src="https://2tihub.xyz/js/darkmode.js"></script>
 
   </body>
 </html>

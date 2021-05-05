@@ -1,3 +1,12 @@
-[
-      {"version": "1.1.3", "name": "2TI Hub", "date-short": "05.05.2021", "date": "5 Maj, 2021"}
-]
+{
+	"app": "2TI Hub",
+	"apk": "2tihub.apk",
+	"version": {
+		"1.0.0": {
+			"name": "2TI Hub",
+			"date-short": "05.05.2021",
+			"date-pl": "5 Maj, 2021",
+			"date-en": "5th May, 2021"
+		}
+	}
+}

@@ -2,8 +2,16 @@
 	"app": "2TI Hub",
 	"apk": "2tihub.apk",
 	"version": {
+	  "latest": {
+			"name": "2TI Hub",
+			"apk": "2tihub-1.0.0",
+			"date-short": "05.05.2021",
+			"date-pl": "5 Maj, 2021",
+			"date-en": "5th May, 2021"
+		},
 		"1.0.0": {
 			"name": "2TI Hub",
+			"apk": "2tihub-1.0.0",
 			"date-short": "05.05.2021",
 			"date-pl": "5 Maj, 2021",
 			"date-en": "5th May, 2021"

@@ -6,6 +6,7 @@
 			"version": "1.0.7",
 			"name": "2TI Hub",
 			"apk": "2tihub-1.0.7",
+			"beta": "true",
 			"date": {
 			  "short":"13.05.2021",
 			  "pl": "13 Maj, 2021",
@@ -16,6 +17,7 @@
 			"version": "1.0.7",
 			"name": "2TI Hub",
 			"apk": "2tihub-1.0.7",
+			"beta": "true",
 			"date": {
 			  "short":"13.05.2021",
 			  "pl": "13 Maj, 2021",
@@ -26,6 +28,7 @@
 			"version": "1.0.4",
 			"name": "2TI Hub",
 			"apk": "2tihub-1.0.4",
+			"beta": "true",
 			"date": {
 			  "short":"12.05.2021",
 			  "pl": "12 Maj, 2021",
@@ -36,6 +39,7 @@
 			"version": "1.0.3",
 			"name": "2TI Hub",
 			"apk": "2tihub-1.0.3",
+			"beta": "true",
 			"date": {
 			  "short":"05.05.2021",
 			  "pl": "5 Maj, 2021",
@@ -46,6 +50,7 @@
 			"version": "1.0.0",
 			"name": "2TI Hub",
 			"apk": "2tihub-1.0.0",
+			"beta": "true",
 			"date": {
 			  "short":"05.05.2021",
 			  "pl": "5 Maj, 2021",

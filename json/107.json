@@ -6,6 +6,14 @@
 			"version": "1.0.7",
 			"name": "2TI Hub",
 			"apk": "2tihub-1.0.7",
+			"beta": {
+				"if": "true",
+				"pl": "tak",
+				"en": "yes",
+				"ifc": "True",
+				"plc": "Tak",
+				"enc": "Yes"
+			},
 			"date": {
 				"short": "13.05.2021",
 				"pl": "13 Maj, 2021",

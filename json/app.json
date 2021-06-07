@@ -1,19 +1,20 @@
 {
 	"app": "2TI Hub",
 	"apk": "2tihub.apk",
+	"support": {
+		"if": "true",
+		"pl": "tak",
+		"en": "yes",
+		"ifc": "True",
+		"plc": "Tak",
+		"enc": "Yes",
+		"datepl": "6 Wrzesień, 2021",
+	},
 	"version": {
 		"latest": {
 			"version": "1.0.8",
 			"name": "2TI Hub",
 			"apk": "2tihub-1.0.8",
-			"support": {
-				"if": "true",
-				"pl": "tak",
-				"en": "yes",
-				"ifc": "True",
-				"plc": "Tak",
-				"enc": "Yes"
-			},
 			"beta": {
 				"if": "true",
 				"pl": "tak",

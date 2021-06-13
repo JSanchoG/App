@@ -1,12 +1,28 @@
 {
 	"app": "2TI Hub",
 	"apk": "2tihub.apk",
+	"support": {
+		"if": "true",
+		"pl": "tak",
+		"en": "yes",
+		"ifc": "True",
+		"plc": "Tak",
+		"enc": "Yes",
+		"datepl": "6 Wrzesień, 2021"
+	},
 	"version": {
 		"latest": {
 			"version": "1.0.8",
 			"name": "2TI Hub",
 			"apk": "2tihub-1.0.8",
-			"beta": "true",
+			"beta": {
+				"if": "true",
+				"pl": "tak",
+				"en": "yes",
+				"ifc": "True",
+				"plc": "Tak",
+				"enc": "Yes"
+			},
 			"date": {
 			  "short":"15.05.2021",
 			  "pl": "15 Maj, 2021",
@@ -17,7 +33,14 @@
 			"version": "1.0.8",
 			"name": "2TI Hub",
 			"apk": "2tihub-1.0.8",
-			"beta": "true",
+			"beta": {
+				"if": "true",
+				"pl": "tak",
+				"en": "yes",
+				"ifc": "True",
+				"plc": "Tak",
+				"enc": "Yes"
+			},
 			"date": {
 				"short": "15.05.2021",
 				"pl": "15 Maj, 2021",
@@ -28,7 +51,14 @@
 			"version": "1.0.7",
 			"name": "2TI Hub",
 			"apk": "2tihub-1.0.7",
-			"beta": "true",
+			"beta": {
+				"if": "true",
+				"pl": "tak",
+				"en": "yes",
+				"ifc": "True",
+				"plc": "Tak",
+				"enc": "Yes"
+			},
 			"date": {
 			  "short":"13.05.2021",
 			  "pl": "13 Maj, 2021",
@@ -39,7 +69,14 @@
 			"version": "1.0.4",
 			"name": "2TI Hub",
 			"apk": "2tihub-1.0.4",
-			"beta": "true",
+			"beta": {
+				"if": "true",
+				"pl": "tak",
+				"en": "yes",
+				"ifc": "True",
+				"plc": "Tak",
+				"enc": "Yes"
+			},
 			"date": {
 			  "short":"12.05.2021",
 			  "pl": "12 Maj, 2021",
@@ -50,7 +87,14 @@
 			"version": "1.0.3",
 			"name": "2TI Hub",
 			"apk": "2tihub-1.0.3",
-			"beta": "true",
+			"beta": {
+				"if": "true",
+				"pl": "tak",
+				"en": "yes",
+				"ifc": "True",
+				"plc": "Tak",
+				"enc": "Yes"
+			},
 			"date": {
 			  "short":"05.05.2021",
 			  "pl": "5 Maj, 2021",
@@ -61,7 +105,14 @@
 			"version": "1.0.0",
 			"name": "2TI Hub",
 			"apk": "2tihub-1.0.0",
-			"beta": "true",
+			"beta": {
+				"if": "true",
+				"pl": "tak",
+				"en": "yes",
+				"ifc": "True",
+				"plc": "Tak",
+				"enc": "Yes"
+			},
 			"date": {
 			  "short":"05.05.2021",
 			  "pl": "5 Maj, 2021",

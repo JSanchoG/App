@@ -29,6 +29,42 @@
 			  "en": "15th May, 2021"
 			}
 		},
+		"1.0.9": {
+			"version": "1.0.9",
+			"name": "TI Hub",
+			"apk": "tihub-1.0.9",
+			"beta": {
+				"if": "true",
+				"pl": "tak",
+				"en": "yes",
+				"ifc": "True",
+				"plc": "Tak",
+				"enc": "Yes"
+			},
+			"date": {
+			  "short":"16.06.2021",
+			  "pl": "16 Czerwiec, 2021",
+			  "en": "16th June, 2021"
+			}
+		},
+		"1.0.8-2": {
+			"version": "1.0.8",
+			"name": "TI Hub",
+			"apk": "tihub-1.0.8",
+			"beta": {
+				"if": "true",
+				"pl": "tak",
+				"en": "yes",
+				"ifc": "True",
+				"plc": "Tak",
+				"enc": "Yes"
+			},
+			"date": {
+				"short": "15.06.2021",
+				"pl": "15 Czerwiec, 2021",
+				"en": "15th June, 2021"
+			}
+		},
 		"1.0.8": {
 			"version": "1.0.8",
 			"name": "2TI Hub",

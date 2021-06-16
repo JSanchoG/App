@@ -1,6 +1,6 @@
 {
-	"app": "2TI Hub",
-	"apk": "2tihub.apk",
+	"app": "TI Hub",
+	"apk": "tihub.apk",
 	"support": {
 		"if": "true",
 		"pl": "tak",
@@ -8,7 +8,7 @@
 		"ifc": "True",
 		"plc": "Tak",
 		"enc": "Yes",
-		"datepl": "6 Wrzesień, 2021"
+		"datepl": "12 Czerwiec, 2021"
 	},
 	"version": {
 		"latest": {

@@ -1,0 +1,17 @@
+{
+	"app": "TI Hub",
+	"apk": "tihub.apk",
+	"version": {
+		"latest": {
+			"version": "1.1.0",
+			"name": "TI Hub",
+			"apk": "tihub-1.1.0",
+			"beta": "true",
+			"date": {
+				"short": "08.09.2021",
+				"pl": "8 Wrzesień, 2021",
+				"en": "8th September, 2021"
+			}
+		}
+	}
+}

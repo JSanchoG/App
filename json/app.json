@@ -12,9 +12,9 @@
 	},
 	"version": {
 		"latest": {
-			"version": "1.2.0",
+			"version": "1.1.1",
 			"name": "TI Hub",
-			"apk": "tihub-1.2.0",
+			"apk": "tihub-1.1.1",
 			"beta": {
 				"if": "true",
 				"pl": "tak",
@@ -24,27 +24,9 @@
 				"enc": "Yes"
 			},
 			"date": {
-			  "short":"20.01.2022",
-			  "pl": "20 Styczeń, 2022",
-			  "en": "20th January, 2022"
-			}
-		},
-		"1.2.0": {
-			"version": "1.2.0",
-			"name": "TI Hub",
-			"apk": "tihub-1.2.0",
-			"beta": {
-				"if": "true",
-				"pl": "tak",
-				"en": "yes",
-				"ifc": "True",
-				"plc": "Tak",
-				"enc": "Yes"
-			},
-			"date": {
-			  "short":"20.01.2022",
-			  "pl": "20 Styczeń, 2022",
-			  "en": "20th January, 2022"
+			  "short":"10.09.2021",
+			  "pl": "10 Wrzesień, 2021",
+			  "en": "10th September, 2021"
 			}
 		},
 		"1.1.1": {
